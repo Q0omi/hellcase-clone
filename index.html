@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101114">
+  <meta name="description" content="Enter Embercase. Open CS2 cases, collect skins, claim a free daily reward, and challenge a bot in case battles. Play with free virtual credits.">
+  <title>Embercase — Open something extraordinary</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='10' fill='%2317191e'/%3E%3Cpath d='M23 3 9 23h10l-2 14 15-22H21z' fill='%23ff7139'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+  <script src="assets.js" defer></script>
+  <script src="upgrade-engine.js" defer></script>
+  <script src="audio.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <aside class="sidebar" aria-label="Main navigation">
+    <a class="brand" href="#cases"><span class="brand-mark">ϟ</span><span>EMBER<span class="brand-light">CASE</span><small>TURN UP THE HEAT</small></span></a>
+    <div class="sidebar-label">PLAY YOUR WAY</div>
+    <nav id="main-nav"></nav>
+    <div class="side-daily"><span class="mini-label">A LITTLE SOMETHING. EVERY DAY.</span><strong>Your daily drop<br>is waiting.</strong><button class="text-link" data-nav="daily">Claim your free case <span>↗</span></button></div>
+    <div class="side-bottom"><span class="demo-indicator"></span> FREE PLAY DEMO <button aria-label="About this demo" data-action="about">ⓘ</button></div>
+  </aside>
+  <div class="workspace">
+    <header class="topbar">
+      <div class="mobile-brand"><span class="brand-mark">ϟ</span> EMBERCASE</div>
+      <div class="header-label">THE HOME OF YOUR NEXT DROP <span class="header-separator">/</span> <span>CS2</span></div>
+      <div class="account"><button class="sound-toggle" id="sound-toggle" data-action="sound" aria-label="Mute sound effects" aria-pressed="true">SFX ON</button><div class="balance"><span class="coin">◈</span><strong id="balance">1,000.00</strong><span class="balance-label">CREDITS</span></div><button class="add-credits" data-action="credits" aria-label="Add free demo credits">+</button><button class="profile" data-nav="inventory" aria-label="Open your inventory">JD</button></div>
+    </header>
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation"></nav>
+    <div class="drop-ticker"><div class="ticker-label"><span class="tiny-spark">ϟ</span><strong>DROP FEED</strong><small>Demo activity</small></div><div class="ticker-track" id="ticker"></div></div>
+    <main id="main" tabindex="-1"></main>
+    <footer><a class="footer-brand" href="#cases">ϟ EMBERCASE</a><span>Virtual skins. Real excitement.</span><button data-action="about">About the demo</button><button data-action="odds">How drops work</button><small>Independent concept · Not affiliated with Hellcase or Valve</small></footer>
+  </div>
+  <dialog id="modal" aria-labelledby="modal-title"><div id="modal-body"></div></dialog>
+  <div id="toasts" aria-live="polite" aria-atomic="true"></div>
+</body>
+</html>
